@@ -1,5 +1,5 @@
 <?php
-//URLアクセス,GETアクセス等で直接アクセスされた場合はcontact.phpへリダイレクト
+// 直接アクセス（GETアクセス等）された場合は contact.php へリダイレクト
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     header('Location: contact.php');
     exit;
