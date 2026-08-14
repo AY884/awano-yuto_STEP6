@@ -11,14 +11,8 @@ $companyName = $_POST['companyName'] ?? '';
 $email = $_POST['email'] ?? '';
 $age = $_POST['age'] ?? '';
 $message = $_POST['message'] ?? '';
-
-// 未入力項目のバリデーションチェック
-if (empty($name) || empty($companyName) || empty($email) || empty($age) || empty($message)) {
-    echo "<p style='color:red;'>未入力の項目があります。入力画面に戻って再入力してください。</p>";
-    echo "<button onclick='history.back()'>戻る</button>";
-    exit;
-}
 ?>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>

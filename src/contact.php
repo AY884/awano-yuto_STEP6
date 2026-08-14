@@ -22,42 +22,42 @@
     </aside>
 
     <form action="confirm.php" method="POST">
-      <table class="table">
-        <tr>
-          <th>お名前</th>
-          <td>
-            <input type="text" name="name" size="40">
-          </td>
-        </tr>
-        <tr>
-          <th>会社名</th>
-          <td>
-            <input type="text" name="companyName" size="40">
-          </td>
-        </tr>
-        <tr>
-          <th>メールアドレス</th>
-          <td>
-            <input type="email" name="email" size="40">
-          </td>
-        </tr>
-        <tr>
-          <th>年齢</th>
-          <td>
-            <input type="text" name="age" size="40">
-          </td>
-        </tr>
-        <tr>
-          <th>お問い合わせ内容</th>
-          <td>
-            <textarea name="message" placeholder="お問い合わせ内容"></textarea>
-          </td>
-        </tr>
-      </table>
+  <table class="table">
+    <tr>
+      <th>お名前</th>
+      <td>
+        <input type="text" name="name" id="name" size="40">
+      </td>
+    </tr>
+    <tr>
+      <th>会社名</th>
+      <td>
+        <input type="text" name="companyName" id="companyName" size="40">
+      </td>
+    </tr>
+    <tr>
+      <th>メールアドレス</th>
+      <td>
+        <input type="email" name="email" id="email" size="40">
+      </td>
+    </tr>
+    <tr>
+      <th>年齢</th>
+      <td>
+        <input type="text" name="age" id="age" size="40">
+      </td>
+    </tr>
+    <tr>
+      <th>お問い合わせ内容</th>
+      <td>
+        <textarea name="message" id="message" placeholder="お問い合わせ内容"></textarea>
+      </td>
+    </tr>
+  </table>
 
-      <br>
-      <input type="submit" value="送信">
-    </form>
+  <br>
+  <input type="submit" value="送信">
+</form>
   </main>
 
   <footer>
@@ -65,6 +65,6 @@
     <button type="button" id="footer-bg-btn">押してみてね！</button>
   </footer>
 
-  <script src="style.js?v=2"></script>
+  <script src="style.js"></script>
 </body>
 </html>
