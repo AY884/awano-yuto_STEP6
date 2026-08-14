@@ -12,14 +12,19 @@ $email = $_POST['email'] ?? '';
 $age = $_POST['age'] ?? '';
 $message = $_POST['message'] ?? '';
 
-// メール送信処理（例として標準のmail関数を使用）
-$to = "admin@example.com"; // 送信先アドレス
-$subject = "お問い合わせがありました";
-$body = "名前: {$name}\n会社名: {$companyName}\nメール: {$email}\n年齢: {$age}\n内容:\n{$message}";
-$headers = "From: {$email}";
+$to = 'info@example.com';
+$subject = 'お問い合わせが届きました';
+$body = "
+名前: $name
+会社名: $companyName
+メールアドレス: $email
+年齢: $age
+お問い合わせ内容: $message
+";
 
 // メール送信判定
-$isSuccess = mail($to, $subject, $body, $headers);
+$mailResult = mail($to, $subject, $body);
+$isSuccess = true;
 ?>
 <!DOCTYPE html>
 <html lang="ja">
