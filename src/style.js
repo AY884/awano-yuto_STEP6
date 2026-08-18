@@ -22,14 +22,14 @@ if (form) {
         const age = document.getElementById('age').value;
         const message = document.getElementById('message').value;
 
-        // // 未入力チェック（いずれかが空文字の場合）
-        // if (name === "" || companyName === "" || email === "" || age === "" || message === "") {
-        //     // エラーメッセージを表示
-        //     alert("必須項目が未入力です。入力内容をご確認ください。");
-        //     // 送信を中止
-        //     event.preventDefault();
-        //     return;
-        // }
+        // 未入力チェック（いずれかが空文字の場合）
+        if (name === "" || companyName === "" || email === "" || age === "" || message === "") {
+            // エラーメッセージを表示
+            alert("必須項目が未入力です。入力内容をご確認ください。");
+            // 送信を中止
+            event.preventDefault();
+            return;
+        }
 
         // すべて入力されている場合の確認ダイアログ
         const confirmMessage = "下記の内容を本当に送信しますか？\n\n" +
