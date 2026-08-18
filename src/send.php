@@ -23,8 +23,8 @@ $body = "
 ";
 
 // メール送信判定
+// mailResultはメール送信が成功したかどうかを判定する変数
 $mailResult = mail($to, $subject, $body);
-$isSuccess = true;
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -38,7 +38,7 @@ $isSuccess = true;
 
     <div class="message-area">
         <?php
-        if ($isSuccess) {
+        if ($mailResult) {
             echo "<p>お問い合わせが送信されました。ありがとうございます！</p>";
         } else {
             echo "<p style='color:red;'>メールの送信に失敗しました。時間をおいて再度お試しください。</p>";
